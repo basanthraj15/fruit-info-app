@@ -31,7 +31,7 @@ class _SplashscreenState extends State<Splashscreen> {
     
     super.initState();
 
-    Future.delayed(Duration(seconds: 5),(){
+    Future.delayed(Duration(seconds: 3),(){
       Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>  HomePage() ));
     });
   }
@@ -46,14 +46,23 @@ class _SplashscreenState extends State<Splashscreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
-            child: ClipOval(
-          child: Image.asset("assets/images/fruits.jpg",
-          width: 100,height: 100,
-          fit: BoxFit.cover,))),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ClipOval(
+                        child: Image.asset("assets/images/fruits.jpg",
+                        width: 100,height: 100,
+                        fit: BoxFit.cover,)),
+            )),
           SizedBox(height: 20),
-          CircularProgressIndicator(color: AppColors.appbarText ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: CircularProgressIndicator(color: AppColors.appbarText),
+          ),
           SizedBox(height: 20),
-          Text("Fruit Info App",style: TextStyle(fontSize: 20,color: AppColors.appbarText),),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text("Fruit Info App",style: TextStyle(fontSize: 20,color: AppColors.appbarText),),
+          ),
 
         ],
       ),
