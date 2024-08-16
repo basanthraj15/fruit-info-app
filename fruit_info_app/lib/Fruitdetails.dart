@@ -52,9 +52,12 @@ class FruitdetailsScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            Text(
-              " ${info.toString()}",
-              style: TextStyle(fontSize: 20),
+            Padding(
+              padding: const EdgeInsets.only(left: 10,right: 10),
+              child: Text(
+                " ${info.toString()}",
+                style: TextStyle(fontSize: 20),
+              ),
             )
           ],
         ),
