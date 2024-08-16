@@ -2,10 +2,6 @@ import 'package:dog_info_app/Colors.dart';
 import 'package:dog_info_app/Fruitdetails.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(HomePage());
-  print("/Homepage");
-}
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
