@@ -34,32 +34,37 @@ class FruitdetailsScreen extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Column(
-          children: [
-            SizedBox(height: 30),
-            Text(
-              "NAME: ${name.toString().toUpperCase()}",
-              style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.text),
-            ),
-            ClipOval(
-              child: Image.asset(
-                getImagePath(),
-                height: 200,
-                width: 200,
+        child: SingleChildScrollView(
+            physics: AlwaysScrollableScrollPhysics(),
+          child: Column(
+            children: [
+              SizedBox(height: 30),
+              Text(
+                "NAME: ${name.toString().toUpperCase()}",
+                style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.text),
               ),
-            ),
-            SizedBox(height: 10),
-            Padding(
-              padding: const EdgeInsets.only(left: 10,right: 10),
-              child: Text(
-                " ${info.toString()}",
-                style: TextStyle(fontSize: 20),
+              ClipOval(
+                child: Image.asset(
+                  getImagePath(),
+                  height: 200,
+                  width: 200,
+                ),
               ),
-            )
-          ],
+              SizedBox(height: 10),
+              Padding(
+                padding: const EdgeInsets.only(left: 10,right: 10),
+                child: Expanded(
+                  child: Text(
+                    " ${info.toString()}",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );

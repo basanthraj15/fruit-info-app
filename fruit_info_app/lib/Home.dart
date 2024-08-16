@@ -44,7 +44,7 @@ class FruitList extends StatelessWidget {
 
   final Map<String, String> Fruitinfo = {
     'Apple':
-        'Apples are known for their crisp texture and sweet-tart flavor, making them versatile in various dishes. Rich in fiber and vitamin C, they offer health benefits like improved heart health.',
+        'Apples are known for their crisp texture and sweet-tart flavor, making them versatile in various dishes. Rich in fiber and vitamin C, they offer health benefits like improved heart health.Apples are one of the most popular and widely cultivated fruits in the world, with over 7,500 varieties globally. Originating in Central Asia, particularly in the region of present-day Kazakhstan, apples are now grown in many parts of the world. They belong to the Rosaceae family, which also includes other fruits like pears, peaches, and plums. Nutritionally, apples are a great source of dietary fiber, vitamin C, and antioxidants, making them a healthy snack option. A medium-sized apple typically contains about 95 calories. When stored in a cool, dry place, apples can remain fresh for several weeks, partly due to the ethylene gas they naturally produce.',
     'Orange':
         'Oranges are citrus fruits with a juicy, sweet-tangy flavor, enjoyed fresh or as juice. High in vitamin C, they boost the immune system and support overall health.',
     'Pineapple':
